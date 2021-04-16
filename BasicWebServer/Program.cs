@@ -29,7 +29,7 @@ namespace BasicWebServer
                         Encoding.UTF8.GetString(buffer, 0, lenght);
                     Console.WriteLine(requestString);
 
-                    string html = $"<h1>Hello from NikiServer {DateTime.Now}</h1>" +
+                    string html = $"<h1>Hello from Trifon'sServer -->YES I DID IT!!! AND IT WORKS {DateTime.Now}</h1>" +
                         $"<form action=/tweet method=post><input name=username /><input name=password />" +
                         $"<input type=submit /></form>";
 
@@ -37,7 +37,7 @@ namespace BasicWebServer
                         "Server: NikiServer 2020" + NewLine +
                         // "Location: https://www.google.com" + NewLine +
                         "Content-Type: text/html; charset=utf-8" + NewLine +
-                        // "Content-Disposition: attachment; filename=niki.txt" + NewLine +
+                        // "Content-Disposition: attachment; filename=trif.txt" + NewLine +
                         "Content-Lenght: " + html.Length + NewLine +
                         NewLine +
                         html + NewLine;
